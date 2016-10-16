@@ -10,14 +10,16 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     12389,        293]
-NotebookOptionsPosition[     12156,        280]
-NotebookOutlinePosition[     12489,        295]
-CellTagsIndexPosition[     12446,        292]
+NotebookDataLength[     12897,        308]
+NotebookOptionsPosition[     12600,        292]
+NotebookOutlinePosition[     12925,        307]
+CellTagsIndexPosition[     12882,        304]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{
   RowBox[{"(*", " ", 
@@ -38,7 +40,7 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"mu", "=", 
      RowBox[{"{", 
-      RowBox[{"2", ",", "4"}], "}"}]}], ";", " ", 
+      RowBox[{"2", ",", "3"}], "}"}]}], ";", " ", 
     RowBox[{"(*", " ", 
      RowBox[{
       RowBox[{
@@ -244,12 +246,14 @@ Cell[BoxData[
           RowBox[{"If", "[", 
            RowBox[{
             RowBox[{
-             RowBox[{"PermutationProduct", "[", 
-              RowBox[{
-               RowBox[{"permList", "[", 
-                RowBox[{"[", "j", "]"}], "]"}], ",", 
-               RowBox[{"sigma", "[", 
-                RowBox[{"[", "i", "]"}], "]"}]}], "]"}], "==", 
+             RowBox[{"Apply", "[", 
+              RowBox[{"PermutationProduct", ",", 
+               RowBox[{"Append", "[", 
+                RowBox[{
+                 RowBox[{"permList", "[", 
+                  RowBox[{"[", "j", "]"}], "]"}], ",", 
+                 RowBox[{"sigma", "[", 
+                  RowBox[{"[", "i", "]"}], "]"}]}], "]"}]}], "]"}], "==", 
              RowBox[{"Cycles", "[", 
               RowBox[{"{", "}"}], "]"}]}], ",", 
             RowBox[{"n", "++"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", 
@@ -276,10 +280,18 @@ Cell[BoxData[
    3.685551849912607*^9}, {3.685551897050708*^9, 3.685551957868005*^9}, {
    3.685552305436887*^9, 3.685552355509499*^9}, {3.685553729044426*^9, 
    3.685553813929188*^9}, {3.685553844091426*^9, 3.6855539316812277`*^9}, {
-   3.685554018809907*^9, 3.685554071528667*^9}}]
+   3.685554018809907*^9, 3.685554071528667*^9}, {3.685594341860238*^9, 
+   3.685594342559166*^9}, {3.685595309425675*^9, 3.685595368316812*^9}, {
+   3.6855966120150547`*^9, 3.685596614493168*^9}, {3.6855966523270683`*^9, 
+   3.68559669914263*^9}, 3.685596734484548*^9}],
+
+Cell[BoxData[
+ FractionBox["487", "2"]], "Output",
+ CellChangeTimes->{3.68559676094827*^9}]
+}, Open  ]]
 },
-WindowSize->{808, 704},
-WindowMargins->{{14, Automatic}, {7, Automatic}},
+WindowSize->{686, 704},
+WindowMargins->{{0, Automatic}, {7, 30}},
 FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -294,7 +306,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 11594, 258, 844, "Input"]
+Cell[CellGroupData[{
+Cell[580, 22, 11910, 263, 924, "Input"],
+Cell[12493, 287, 91, 2, 84, "Output"]
+}, Open  ]]
 }
 ]
 *)
